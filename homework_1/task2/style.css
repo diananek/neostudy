@@ -6,6 +6,8 @@ body {
     cursor: pointer;
     position: relative;
     font-size: 20px;
+    width: fit-content;
+    margin-top: 100px;
 }
 
 .tooltip-text {
@@ -15,17 +17,22 @@ body {
   line-height: 20px; 
   font-weight: 400; 
   text-transform: none;
-  padding: 20px 18px 18px 22px; 
+  padding: 5px;
+  text-align: center;
   border-radius: 10px; 
-  width: 150px; 
+  width: 100px; 
   position: absolute;
-  top: 100%; 
+  bottom: 100%; 
   left: 50%;
   z-index: 1;
   transform: translateX(-50%); 
-  display: none; 
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear
 }
 
 .tooltip:hover .tooltip-text  {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  
 }
