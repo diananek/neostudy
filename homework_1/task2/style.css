@@ -1,0 +1,31 @@
+body {
+    margin: 30px;
+}
+
+.tooltip {
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+}
+
+.tooltip-text {
+  background-color: #333333; 
+  color: #FFFFFF; 
+  font-size: 16px; 
+  line-height: 20px; 
+  font-weight: 400; 
+  text-transform: none;
+  padding: 20px 18px 18px 22px; 
+  border-radius: 10px; 
+  width: 150px; 
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%); 
+  display: none; 
+}
+
+.tooltip:hover .tooltip-text  {
+  display: block;
+}

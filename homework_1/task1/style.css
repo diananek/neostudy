@@ -1,0 +1,30 @@
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-right: 45px;
+}
+main {
+    padding: 15px;
+}
+html {
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+    
+}
+button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: gainsboro;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    transition: all 0.3s ease;
+    float: right;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: cadetblue;
+}
